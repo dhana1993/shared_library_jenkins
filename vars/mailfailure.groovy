@@ -1,5 +1,6 @@
 def call(){
-    emailext body: "Hi team   \n Build is failed in  ${FAILED_STAGE} \n BUILD URL : ${BUILD_URL}  \n ",
-            to: "${EMAIL_TO}",
-            subject: 'Jenkins build information : $PROJECT_NAME - #$BUILD_NUMBER '
+    emailext body:'${SCRIPT,template="groovy-html.template"}\n SonarQube result URL:  "${URL}" ',
+                    mimeType: 'text/html',
+                    to: "${EMAIL_TO}",
+                    subject: 'Jenkins build information : $PROJECT_NAME - #$BUILD_NUMBER '
 }
