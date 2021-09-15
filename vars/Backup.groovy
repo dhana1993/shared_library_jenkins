@@ -1,3 +1,3 @@
-def call(Map config = [:]) {
-    sh "echo Hello ${config.name}. Today is ${config.dayOfWeek}."
+def call() {
+     sh ''' sudo mkdir $(date +"%d-%m-%Y")-$BUILD_NUMBER && cp dist/NewFaveo.war $(date +"%d-%m-%Y")-$BUILD_NUMBER  '''
 }
