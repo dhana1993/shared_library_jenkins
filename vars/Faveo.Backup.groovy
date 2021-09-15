@@ -1,5 +1,5 @@
 def call(){
 
-    sh ''' sudo mkdir ${BACKUP_PATH}  '''
+    sh ''' sudo mkdir -p ${BACKUP_PATH}  '''
 
 }
