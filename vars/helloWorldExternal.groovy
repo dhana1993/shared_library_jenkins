@@ -1,5 +1,5 @@
 def call(){
-    sh' 
+    sh''' 
     def DIR="resurces/com"
    if [ -d "$DIR" ]; then
   ### Take action if $DIR exists ###
@@ -9,5 +9,5 @@ else
   echo "Error: ${DIR} not found. Can not continue."
   exit 1
 fi
-    '
+    '''
 }
