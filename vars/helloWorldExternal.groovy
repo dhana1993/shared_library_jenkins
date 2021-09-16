@@ -1,4 +1,5 @@
 def call(){
-    def request = libraryResource 'com'
-    sh '  (  echo ${request}) '
+    def path = "resurces/com"
+    sh" echo $path"
+    
 }
