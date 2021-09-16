@@ -7,7 +7,7 @@ def call(){
   echo "Installing config files in ${DIR}..."
 else
   
-  cp $DIR .
+  cp libraryResource "com" .
   exit 1
 fi
     '''
