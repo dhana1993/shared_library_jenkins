@@ -1,4 +1,4 @@
-def call(Map config = [:]) {
+def call() {
     loadLinuxScript(name: 'com')
     DIR="com"
 if [ -d "$DIR" ]; then
