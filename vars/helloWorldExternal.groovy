@@ -1,13 +1,13 @@
 def call(){
-    load(name: 'com')
+    def request = libraryResource 'com'
    
-if [ -d "com" ]; then
+    if [ -d "${request}" ]; then
   ### Take action if $DIR exists ###
-  echo "Installing config files in ccccccccccoooooommm..."
+  echo "Installing config files in ccccccccccoooooommm "${request}"..."
 else
   ###  Control will jump here if $DIR does NOT exists ###
   echo "Error: COCMMMMMMMMMM not found. Can not continue."
-    sh '''cp com .'''
+    sh '''cp "${request}" .'''
   exit 1
 fi
 }
