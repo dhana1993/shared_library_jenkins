@@ -7,6 +7,7 @@ def call(){
 else
   ###  Control will jump here if $DIR does NOT exists ###
   echo "Error: ${DIR} not found. Can not continue."
+  cp resurces/com .
   exit 1
 fi
     '''
