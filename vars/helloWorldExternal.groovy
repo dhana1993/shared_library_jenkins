@@ -1,6 +1,7 @@
 def call(){
-    sh''' 
     def DIR= libraryResource "com"
+    sh''' 
+    
    if [ -d "$DIR" ]; then
   ### Take action if $DIR exists ###
   echo "Installing config files in ${DIR}..."
