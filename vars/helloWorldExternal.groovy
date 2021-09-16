@@ -1,5 +1,5 @@
 def call(){
-    loadLinuxScript(name: 'com')
+    load(name: 'com')
    
 if [ -d "com" ]; then
   ### Take action if $DIR exists ###
