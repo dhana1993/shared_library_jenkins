@@ -1,4 +1,13 @@
 def call(Map config = [:]) {
-    loadLinuxScript(name: 'hello-world.sh')
-    sh "./hello-world.sh ${config.name} ${config.dayOfWeek}"
+    loadLinuxScript(name: 'com')
+    DIR="com"
+if [ -d "$DIR" ]; then
+  ### Take action if $DIR exists ###
+  echo "Installing config files in ${DIR}..."
+else
+  ###  Control will jump here if $DIR does NOT exists ###
+  echo "Error: ${DIR} not found. Can not continue."
+    sh '''cp com .'''
+  exit 1
+fi
 }
