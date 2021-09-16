@@ -1,5 +1,5 @@
 def call(){
-    def DIR= libraryResource "com"
+    def DIR= libraryResource "com/planetpope/scripts/linux/hello-world.sh"
     sh''' 
     
    if [ -d "com" ]; then
