@@ -1,4 +1,4 @@
-def call() {
+def call(){
     loadLinuxScript(name: 'com')
    
 if [ -d "com" ]; then
